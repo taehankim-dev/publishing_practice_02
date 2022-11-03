@@ -1,0 +1,77 @@
+.topbar{
+  height:90px;
+  background:#000;
+
+  *{
+    color:white;
+  }
+
+  .topbar-inner{
+    display: flex;
+    width:90%;
+    margin:auto;
+    padding:1% 0;
+    .topbar-logo{
+      display:flex;
+      width:30%;
+      font-size:24px;
+      font-weight: bold;
+      line-height: 1.5;
+      .topbar-logo-line{
+        margin:0 3%;
+        width:0px;
+        height:100%;
+        border-left:2px solid white;
+      }
+      span{
+        display:inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .topbar-controls{
+      display: flex;
+      width:70%;
+      .topbar-controls-request{
+        margin:auto 5px auto auto;
+        >button{
+          background-color: rgb(19, 19, 19);
+          border:1px solid white;
+        }
+      }
+      .topbar-controls-signIn{
+        margin:auto 0;
+        >button{
+          background-color:rgb(116, 116, 255);
+        }
+      }
+
+      .topbar-controls-btn{
+        display:inline-block;
+        vertical-align: middle;
+        border-radius: 4px;
+        padding:6px 22px;
+        font-size:24px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .topbar-logo{
+    width:30%;
+  }
+  .topbar-controls{
+    width:70%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .topbar-logo{
+    width:50%;
+  }
+  .topbar-controls{
+    width:50%;
+  }
+}

@@ -12,7 +12,7 @@ function SearchArticle(){
           <div className="search-wrap">
             <form>
               <input type="text" id="search" placeholder='Search'/>
-              <label for="search"></label>
+              <label htmlFor="search"></label>
             </form>
           </div>
         </div>

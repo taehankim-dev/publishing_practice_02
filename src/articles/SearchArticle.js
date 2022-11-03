@@ -1,8 +1,7 @@
 import React from 'react';
-import "../grid.scss";
 import "./searchArticle.scss";
 
-function searchArticle(){
+function SearchArticle(){
   return(
     <>
       <div className="container">
@@ -22,4 +21,4 @@ function searchArticle(){
   )
 }
 
-export default searchArticle;
+export default SearchArticle;

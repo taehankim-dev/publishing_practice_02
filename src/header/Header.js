@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 
-import './header.scss'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSearch, faBars} from '@fortawesome/free-solid-svg-icons';
 
-function header(){
+
+import './header.scss';
+
+function Header(){
+  const [pageWidth, setPageWidth] = useState(document.body.offsetWidth);
+
+  const handleResize = () => {
+    setPageWidth(document.body.offsetWidth);
+  }
+
+  useEffect(()=> {
+    window.addEventListener("resize", handleResize)
+    return() => {
+      window.addEventListener("resize",handleResize)
+    }
+  },[]);
+
+
   return(
     <>
       <div className="topbar">
@@ -16,18 +35,32 @@ function header(){
               <span>Help Center</span>
             </div>
           </div>
-          <div className="topbar-controls">
-            <div className="topbar-controls-request">
-              <button className="topbar-controls-btn">Submit a request</button>
+          {
+            pageWidth > 1024 
+            ? 
+            <div className="topbar-controls">
+              <div className="topbar-controls-request">
+                <button className="topbar-controls-btn">Submit a request</button>
+              </div>
+              <div className="topbar-controls-signIn">
+                <button  className="topbar-controls-btn">Sign In</button>
+              </div>
             </div>
-            <div className="topbar-controls-signIn">
-              <button  className="topbar-controls-btn">Sign In</button>
+            :
+            <div className="topbar-controls">
+              <div className="topbar-controls-sm topbar-controls-search">
+                <FontAwesomeIcon icon={faSearch} />
+              </div>
+              <div className="topbar-controls-sm topbar-controls-bars">
+                <FontAwesomeIcon icon={faBars} />
+              </div>
             </div>
-          </div>
+          }
+          
         </div>
       </div>
     </>
   )
 }
 
-export default header;
+export default Header;

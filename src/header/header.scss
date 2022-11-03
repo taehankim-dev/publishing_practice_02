@@ -10,15 +10,12 @@
     display: flex;
     width:90%;
     margin:auto;
-    padding:1% 0;
     .topbar-logo{
       display:flex;
-      width:30%;
       font-size:24px;
       font-weight: bold;
       line-height: 1.5;
       .topbar-logo-line{
-        margin:0 3%;
         width:0px;
         height:100%;
         border-left:2px solid white;
@@ -31,7 +28,6 @@
 
     .topbar-controls{
       display: flex;
-      width:70%;
       .topbar-controls-request{
         margin:auto 5px auto auto;
         >button{
@@ -54,24 +50,72 @@
         font-size:24px;
         line-height: 1.5;
       }
+
+      .topbar-controls-sm{
+        display: flex;
+        margin:auto 0;
+        font-size:24px;
+      }
+
+      .topbar-controls-search{
+        margin-left:auto;
+        margin-right:5%;
+      }
+      .topbar-controls-bars{
+        margin:auto 0;
+      }
     }
   }
 }
 
-@media screen and (max-width:1023px) {
-  .topbar-logo{
-    width:30%;
+@media screen and (min-width:1023px) {
+  .topbar-inner{
+    padding:20px 0;
+    .topbar-logo{
+      width:30%;
+      .topbar-logo-line{
+        position:relative;
+        top:0px;
+        margin:0 3%;
+      }
+    }
+    .topbar-controls{
+      width:70%;
+    }
   }
-  .topbar-controls{
-    width:70%;
+}
+
+@media screen and (max-width:1022px) {
+  .topbar-inner{
+    padding:2.5% 0;
+    .topbar-logo{
+      width:40%;
+      .topbar-logo-line{
+        position:relative;
+        top:5px;
+        margin:0 3%;
+      }
+    }
+    .topbar-controls{
+      width:70%;
+    }
   }
 }
 
 @media screen and (max-width:767px) {
-  .topbar-logo{
-    width:50%;
+  .topbar-inner{
+    padding:24px 0;
+    .topbar-logo{
+      width:60%;
+      .topbar-logo-line{
+        position:relative;
+        top:5px;
+        margin:0 3%;
+      }
+    }
+    .topbar-controls{
+      width:40%;
+    }
   }
-  .topbar-controls{
-    width:50%;
-  }
+  
 }

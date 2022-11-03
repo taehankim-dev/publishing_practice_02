@@ -1,6 +1,6 @@
 import React from 'react';
 
-function article01(){
+function Article01(){
   return(
     <>
       {/* Search - article */}
@@ -8,4 +8,4 @@ function article01(){
   )
 }
 
-export default article01;
+export default Article01;

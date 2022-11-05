@@ -34,7 +34,6 @@ function Footer(){
     {idx : 4, name : ""},
     {idx : 5, name : "Contact Us", subTitle : true},
     {idx : 6, name : "abcd@abcd.com"},
-
   ]
 
   return(

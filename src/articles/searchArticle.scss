@@ -1,4 +1,4 @@
-.container{
+.search-container{
   background-color: #DADBF1;
   .container-inner{
     width:90%;
@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (min-width:1023px) {
+@media screen and (min-width:767px) {
   .title-wrap{
     width:720px;
     margin:0 auto 2% auto;

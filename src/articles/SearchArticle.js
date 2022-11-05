@@ -4,7 +4,7 @@ import "./searchArticle.scss";
 function SearchArticle(){
   return(
     <>
-      <div className="container">
+      <div className="container search-container">
         <div className="container-inner">
           <div className="title-wrap">
             <span>How can we help?</span>

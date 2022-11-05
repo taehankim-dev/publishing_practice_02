@@ -41,66 +41,77 @@ function Footer(){
     <>
       <div className="footer-container">
         <div className="footer-inner" id="footer-inner">
-          
-          <div className="footer-list-wrap">
-            <ul className="footer-list">
-              {abstractList.map((e)=> (
-                e.title
-                ? 
-                <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
-                :
-                <li className="footer-list-item" key={e.idx}>{e.name}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-list-wrap">
-            <ul className="footer-list">
-              {resourecesList.map((e)=> (
-                e.title
-                ? 
-                <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
-                :
-                <li className="footer-list-item" key={e.idx}>{e.name}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-list-wrap">
-            <ul className="footer-list">
-              {communityList.map((e)=> (
-                e.title
-                ? 
-                <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
-                :
-                <li className="footer-list-item" key={e.idx}>{e.name}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-list-wrap">
-            <ul className="footer-list">
-              {companyList.map((e)=> (
-                e.title
-                ? 
-                <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
-                :
-                  e.subTitle 
-                  ?
-                  <li className="footer-list-item footer-list-item-subTitle" key={e.idx}>{e.name}</li>
-                  :
-                  <li className="footer-list-item" key={e.idx}>{e.name}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-list-wrap footer-list-copyRight">
-            <ul className="footer-list">
-              <li className="footer-list-item">Sample</li>
-              <li className="footer-list-item">Copyright</li>
-              <li className="footer-list-item">Design, Inc.</li>
-              <li className="footer-list-item">All rights reserved</li>
-            </ul>
+          <div className="row">
+            <div className="col col-xl-9 col-sm-12">
+              <div className="row">
+                <div className="col col-xl-3 col-sm-6">
+                  <div className="footer-list-wrap">
+                    <ul className="footer-list">
+                      {abstractList.map((e)=> (
+                        e.title
+                        ? 
+                        <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
+                        :
+                        <li className="footer-list-item" key={e.idx}>{e.name}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div className="col col-xl-3 col-sm-6">
+                  <div className="footer-list-wrap">
+                    <ul className="footer-list">
+                      {resourecesList.map((e)=> (
+                        e.title
+                        ? 
+                        <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
+                        :
+                        <li className="footer-list-item" key={e.idx}>{e.name}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div className="col col-xl-3 col-sm-6">
+                  <div className="footer-list-wrap">
+                    <ul className="footer-list">
+                      {communityList.map((e)=> (
+                        e.title
+                        ? 
+                        <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
+                        :
+                        <li className="footer-list-item" key={e.idx}>{e.name}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div className="col col-xl-3 col-sm-6">
+                  <div className="footer-list-wrap">
+                    <ul className="footer-list">
+                      {companyList.map((e)=> (
+                        e.title
+                        ? 
+                        <li className="footer-list-item footer-list-item-title" key={e.idx}>{e.name}</li>
+                        :
+                          e.subTitle 
+                          ?
+                          <li className="footer-list-item footer-list-item-subTitle" key={e.idx}>{e.name}</li>
+                          :
+                          <li className="footer-list-item" key={e.idx}>{e.name}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col col-xl-3 col-sm-12">
+              <div className="footer-list-wrap footer-list-copyRight">
+                <ul className="footer-list">
+                  <li className="footer-list-item">Sample</li>
+                  <li className="footer-list-item">Copyright</li>
+                  <li className="footer-list-item">Design, Inc.</li>
+                  <li className="footer-list-item">All rights reserved</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
